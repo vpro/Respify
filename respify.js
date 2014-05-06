@@ -65,20 +65,20 @@
 
             i--;
         }
+       	if ( match ){
+	        var newMatch = match.src !== this.currentMatch.src;
+	        if( newMatch ) {
+	            this.currentMatch = match;
+	        }
 
-        var newMatch = match.src !== this.currentMatch.src;
-        if( newMatch ) {
-            this.currentMatch = match;
-        }
+	        if( ! dry && newMatch ) {
+	            this.setMatch();
+	        }
 
-        if( ! dry && newMatch ) {
-            this.setMatch();
-        }
-
-        if( callback && newMatch ) {
-            callback( match );
-        }
-
+	        if( callback && newMatch ) {
+	            callback( match );
+	        }
+	    }
         return match;
     };
 
