@@ -102,7 +102,7 @@
         if( ! this.settings.background ) {
             this.setImage( encodeURI( this.currentMatch.src ), this.$el.data( 'alt' ) );
         } else {
-            this.$el.css( 'background-image', 'url(' + encodeURI( this.currentMatch.src ) + ')' );
+            this.$el.css( 'background-image', 'url("' + encodeURI( this.currentMatch.src ) + '")' );
         }
     };
 
