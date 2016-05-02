@@ -2,7 +2,7 @@
  * Respify responsive image library
  *
  * Parse a responsive image from a set of data attributes trough media queries, depends upon the matchMedia polyfill for older browsers
- * @version  0.3.2
+ * @version  0.4.0
  * @author  Matthisk Heimensen <m@tthisk.nl>
  */
 (function( w, factory ) {
