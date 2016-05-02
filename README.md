@@ -62,7 +62,10 @@ type: Function, default: ```undefined```
 Here you can supply a function to Respify, this function will be called whenever a new image is calculted at resize. This is especially usefull in combination with the dryRun setting where the image is not actually set on the picture tag.
  
  
- ## Versions
+## Versions
+
+### 0.4.1
+Too hasty, package.json now has a version. 
  
- ### 0.4.0
- Added package.json to be able to install respify with NPM
+### 0.4.0
+Added package.json to be able to install respify with NPM
