@@ -1,5 +1,5 @@
 {
   "name": "respify",
-  "description": "Respify responsive image library. A simple responsive images library, which parses a image from a set of child span nodes with data-media and data-src attributes. It uses media queries to select images."
-  "version": "0.4.1"
+  "description": "Respify responsive image library. A simple responsive images library, which parses a image from a set of child span nodes with data-media and data-src attributes. It uses media queries to select images.",
+  "version": "0.4.2"
 }

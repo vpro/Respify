@@ -64,7 +64,7 @@ Here you can supply a function to Respify, this function will be called whenever
  
 ## Versions
 
-### 0.4.1
+### 0.4.1/0.4.2
 Too hasty, package.json now has a version. 
  
 ### 0.4.0
