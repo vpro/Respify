@@ -1,10 +1,11 @@
 {
   "name": "Respify",
   "main": "Respify.js",
-  "version": "0.4.2",
-  "homepage": "https://github.com/matthisk/Respify",
+  "version": "1.0.0",
+  "homepage": "https://github.com/vpro/Respify",
   "authors": [
-    "Matthisk Heimensen <m@tthisk.nl>"
+    "Matthisk Heimensen <m@tthisk.nl>",
+    "VPRO Front end <frontend@vpro.nl>"
   ],
   "description": "A jQuery responsive image plugin",
   "keywords": [

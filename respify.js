@@ -83,6 +83,11 @@
     };
 
     Picture.prototype.setImage = function( src, alt ) {
+
+        if ( ! this.$img && this.$el.find('> img' ).length > 0 ) {
+            this.$img = this.$el.find('> img' );
+        }
+
         if( ! this.$img ) {
             this.$img = $('<img>').appendTo( this.$el );
         }

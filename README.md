@@ -3,13 +3,15 @@ Respify
 
 Respify responsive image library
 
-A simple responsive images library, which parses a image from a set of child span nodes with data-media and data-src attributes. It uses media queries to select images.
+A simple responsive images library, which parses an image from a set of child span nodes with data-media and data-src attributes. It uses media queries to select images.
 
 ## Example
 
 This is an example of how to use Respify. You can view a working example on the [example page](http://matthisk.github.io/Respify/)
 
-Respify can either be used on an image tag, or any other tag but then the background option should be set to ```true```. Respify wil pop from the array of span child nodes, this means that the last node in the list will be parsed first. If Respify finds one matching media query it will use the corresponding image and stop the search.
+Respify can either be used to create or replace the src of a (direct) child img element, or set the CSS background when the 'background'
+option is be set to ```true```.
+Respify wil pop from the array of span child nodes, this means that the last node in the list will be parsed first. If Respify finds one matching media query it will use the corresponding image and stop the search.
 
 ```
 <span id="default-responsive" class="responsive-img" data-alt="This is an example of a responsive image">
@@ -26,15 +28,15 @@ Respify can either be used on an image tag, or any other tag but then the backgr
 Set up the Javascript like this:
 
 ```
-$('#responsive').respify();
+$('#default-responsive').respify();
 ```
 
-Respify is a spin off from the picture tag specification, the major difference is that it can set background image of the parent tag. Using child ```span``` tags you can supply different size images. Set the data-media tag to specify a media query and use the data-src tag to specify a src image.
+Respify is a loosely based on the picture tag specification, the major difference is that it can set background image of a tag. Using child ```span``` tags you can supply different size images. Set the data-media tag to specify a media query and use the data-src tag to specify a src image.
 
 Pass options to respify as an object:
 
 ```
-$('img').respify({
+$('#default-responsive').respify({
 	background : true
 });
 ```
@@ -47,7 +49,8 @@ Respify adds an event listener to the resize event and will recalculate the imag
 
 type: boolean, default: ```false```
 
-wether to place the selected image as a background-image css property or as a img src attribute.
+wether to place the selected image as a background-image css property or as a img src attribute
+of a direct img child element. If there is no direct img child tag, one will be added.
 
 ### dryRun
 
@@ -63,6 +66,11 @@ Here you can supply a function to Respify, this function will be called whenever
  
  
 ## Versions
+
+### 1.0.0
+Revamped. Readme now follows the functionality of the library.
+Added check for existence of an > img tag of which the src attribute will be replaced when 'background' setting is set to
+false (= default). If not found it will fallback to the default functionality of adding a child img tag.
 
 ### 0.4.1/0.4.2
 Too hasty, package.json now has a version. 
