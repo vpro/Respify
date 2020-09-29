@@ -69,7 +69,7 @@ Here you can supply a function to Respify, this function will be called whenever
 
 ### 2.0.0
 Breaking change. Span elements with data-src have to be a direct child of the respified element and
-include the data-src attribute.
+include the data-src and data-media attribute.
 
 ### 1.0.0
 Revamped. Readme now follows the functionality of the library.
