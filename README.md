@@ -67,6 +67,10 @@ Here you can supply a function to Respify, this function will be called whenever
  
 ## Versions
 
+### 2.0.0
+Breaking change. Span elements with data-src have to be a direct child of the respified element and
+include the data-src attribute.
+
 ### 1.0.0
 Revamped. Readme now follows the functionality of the library.
 Added check for existence of an > img tag of which the src attribute will be replaced when 'background' setting is set to

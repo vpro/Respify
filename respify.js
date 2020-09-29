@@ -120,7 +120,7 @@
             var $el = $( this ),
                 picture = new Picture( $el, settings );
 
-            $el.find( 'span' ).each(function() {
+            $el.find( '> span[data-src][data-media]' ).each(function() {
                 var $img = $( this );
 
                 if( $img.data( 'src' ) ) {
